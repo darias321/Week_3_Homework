@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <form>
+      <label> Password Length </label>
+      <input type="number" name="password-length" min="8" max="128" required />
+      <div>
+        <label> Character Types </label>
+        <input type="checkbox" name="types" value="uppercase" required />
+        Uppercase
+        <input type="checkbox" name="types" value="lowercase" required />
+        Lowercase
+        <input type="checkbox" name="types" value="special-chars" required />
+        Special Characters
+        <input type="checkbox" name="types" value="numbers" required /> numbers
+      </div>
+    </form>
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
